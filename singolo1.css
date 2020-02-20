@@ -12,8 +12,23 @@
     font-style: normal;
 }
 
-h1, h2 {
+@font-face {
+    font-family: 'Lato';
+    src: local('Lato Bold'), local('Lato-Bold'), url('assets/latobold.woff2') format('woff2'), url('assets/latobold.woff') format('woff'), url('assets/latobold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+h1 {
     font-size: inherit;
+}
+
+h2 {
+    color: #666d89;
+font-family: Lato;
+font-size: 18px;
+font-weight: 400;
+line-height: 17.86px;
 }
 
 .wrapper {
@@ -21,8 +36,13 @@ h1, h2 {
     margin: 0 auto;
 }
 
+
+
+
+
 header {
     height: 95px;
+    line-height: 89px;
     background-color: #2d303a;
     margin: 0 auto;
     position: relative;
@@ -38,40 +58,63 @@ header {
 
 .header_text_logo {
     display: inline-block;
-    margin: 34px 0 0 40px;
+    margin-left: 40px;
+    margin-right: 447px;
     color: #ffffff;
     font-family: Lato, serif;
     font-size: 25px;
-    line-height: 6.32px;
     font-weight: 700;
     text-transform: uppercase;
     text-decoration: none;
+    /* width: 115px;
+    height: 20px;    */
 }
 
 header .header_text_logo span {
     color: #f06c64;
 }
 
-.menu_wrapper {
+.menu_container {
     display: inline-block;
-    margin: 0 0 0 454px;
-    position: relative;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 371px;
 }
+
+.menu_wrapper {
+  display: flex;
+  justify-content: space-between;
+  }
 
 .menu_item {
     display: inline-block;
     color: #ffffff;
     font-family: Lato, serif;
-    font-size: 12px;
+    font-size: 11px;
     font-weight: 700;
     text-transform: uppercase;
-
 }
 
 .menu_divider {
     display: inline-block;
     color: #494e62;
+    /* padding-left: 7px;
+    padding-right: 7px; */
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* SLIDER */
 .slider {
@@ -84,21 +127,20 @@ header .header_text_logo span {
 .arrow_left {
     vertical-align: top;
     margin: 281px 0 0 42px;
-
 }
 
 .iphone_vertical {
-    margin: 53px 0 0 54px;
+    margin: 53px 0 0 50px;
     vertical-align: top;
 }
 
 .iphone_horizontal {
-    margin: 168px 0 0 73px;
+    margin: 174px 0 0 69px;
     vertical-align: top;
 }
 
 .arrow_right {
-    margin: 281px 0 0 55px;
+    margin: 281px 0 0 51px;
     vertical-align: top;
 }
 
@@ -106,10 +148,11 @@ header .header_text_logo span {
     background-color: #ea676b;
     height: 6px;
     margin: 0;
+    top
 }
 
 
-/* SERVICES */
+    /* SERVICES */
 .services {
     width: 1020px;
     height: 496px;
@@ -123,6 +166,7 @@ header .header_text_logo span {
 
 .services_info{
     margin: 0;
+    margin-bottom: 12px;
 }
 
 .services_info_title {
@@ -143,51 +187,43 @@ header .header_text_logo span {
     line-height: 30px;
 }
 
-/* FEATURES FLEXBOX */
-.feature {
-    width: 299px;
-    height: 86px;
-}
 
-.feature_wrapper {
+    /* FEATURES FLEXBOX */
+.feature_container {
     display: flex;
     justify-content: space-between;
-    /* justify-content: space-around; */
-    /* flex-wrap: nowrap; */
-    
-    /* margin-top: 31px; */
-    /* position: relative; */
+    height: 209px;
+    width: 938px;
+    flex-wrap: wrap;
 }
+
+.feature {
+    width: 33%;
+    height: 86px;
+    margin-bottom: 50px;
+    }
+
 
 .feature_image {
+    display: inline-block;
     height: 59px;
-    display: inline-block;
-    /* vertical-align: top; */
-    /* position: absolute; */
+    width: 59px;
     margin: 0 0;
+    /* flex: 1; */
+    /* vertical-align: top; */
 }
-
-.feature_title {
-    color: #666d89;
-    font-family: Lato;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 17.86px;
-    vertical-align: top;
-    margin: 0 0 0 21px;
-    width: 97px;
-    position: absolute;
-    display: inline-block;
-
+.feature h2{
+    font-family: Lato-Black;
 }
-
 
 .feature_description {
+    display: inline-block;
     color: #767e9e;
     font-family: Lato;
+    width: 220px;
     font-size: 12px;
     font-weight: 400;
     line-height: 21.56px;
-    margin-top: 18px;
-    display: inline-block;
+    vertical-align: top;
+    
 }
