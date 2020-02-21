@@ -7,38 +7,36 @@
 
 @font-face {
     font-family: 'Lato';
-    src: local('Lato Black'), local('Lato-Black'), url('assets/latoblack.woff2') format('woff2'), url('assets/latoblack.woff') format('woff'), url('assets/latoblack.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+    src: url(assets/Lato-Light.ttf.ttf);
+    font-weight: 300;
 }
 
 @font-face {
     font-family: 'Lato';
-    src: local('Lato Bold'), local('Lato-Bold'), url('assets/latobold.woff2') format('woff2'), url('assets/latobold.woff') format('woff'), url('assets/latobold.ttf') format('truetype');
+    src: url(assets/Lato-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url(assets/Lato-Bold.ttf);
     font-weight: 700;
-    font-style: normal;
 }
 
-h1 {
-    font-size: inherit;
+@font-face {
+    font-family: 'Lato';
+    src: url(assets/Lato-Black.ttf);
+    font-weight: 900;
 }
-
-h2 {
-    color: #666d89;
-font-family: Lato;
-font-size: 18px;
-font-weight: 400;
-line-height: 17.86px;
-}
-
 .wrapper {
     width: 1020px;
     margin: 0 auto;
 }
 
-
-
-
+/* ========HEADER========*/
+h1 {
+    font-size: inherit;
+}
 
 header {
     height: 95px;
@@ -59,16 +57,14 @@ header {
 .header_text_logo {
     display: inline-block;
     margin-left: 40px;
-    margin-right: 447px;
+    margin-right: 450px;
     color: #ffffff;
     font-family: Lato, serif;
     font-size: 25px;
     font-weight: 700;
     text-transform: uppercase;
     text-decoration: none;
-    /* width: 115px;
-    height: 20px;    */
-}
+    }
 
 header .header_text_logo span {
     color: #f06c64;
@@ -94,34 +90,21 @@ header .header_text_logo span {
     font-size: 11px;
     font-weight: 700;
     text-transform: uppercase;
+    letter-spacing: 0.25px;
+    
 }
 
 .menu_divider {
     display: inline-block;
     color: #494e62;
-    /* padding-left: 7px;
-    padding-right: 7px; */
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* SLIDER */
+/* ========SLIDER======== */
 .slider {
     width: 1020px;
     height: 600px;
     background-color: #f06c64;
-
+    position: relative;
 }
 
 .arrow_left {
@@ -147,12 +130,14 @@ header .header_text_logo span {
 .slider_bottom {
     background-color: #ea676b;
     height: 6px;
+    width: 1020px;
     margin: 0;
-    top
+    position:absolute;
+    bottom:0;
+    z-index: 50;
 }
 
-
-    /* SERVICES */
+    /* ========SERVICES======== */
 .services {
     width: 1020px;
     height: 496px;
@@ -161,12 +146,19 @@ header .header_text_logo span {
 }
 
 .services_wrapper {
-    padding: 67px 40px 68px 40px;
+    padding: 69px 40px 68px 40px;
 }
 
 .services_info{
     margin: 0;
     margin-bottom: 12px;
+}
+
+.services .services_wrapper .services_info .services_info_title h2 {
+    color: #666d89;
+    font-family: Lato;
+    font-size: 30px;
+    font-weight: 900;    
 }
 
 .services_info_title {
@@ -177,6 +169,8 @@ header .header_text_logo span {
     line-height: 17.86px;
     font-size: 30px;
     font-weight: 400;
+    margin-bottom: 27px;
+    letter-spacing: -0.1px;
     }
 
 .services_info_description {
@@ -185,35 +179,42 @@ header .header_text_logo span {
     font-size: 18px;
     font-weight: 300;
     line-height: 30px;
+    margin-bottom: 46px;
+    letter-spacing: -0.25px;
+    text-align: justify;
 }
 
 
-    /* FEATURES FLEXBOX */
+    /* ========FEATURES FLEXBOX======== */
 .feature_container {
     display: flex;
+    justify-content: space-around;
     justify-content: space-between;
     height: 209px;
-    width: 938px;
+    width: 939px;
     flex-wrap: wrap;
 }
 
 .feature {
-    width: 33%;
+    width: 32%;
     height: 86px;
-    margin-bottom: 50px;
+    margin-bottom: 37px;
     }
-
 
 .feature_image {
     display: inline-block;
     height: 59px;
     width: 59px;
     margin: 0 0;
-    /* flex: 1; */
-    /* vertical-align: top; */
+    margin-right: 16px;
+    margin-left: 1px;
+    margin-top: 1px;
 }
 .feature h2{
-    font-family: Lato-Black;
+    font-family: Lato;
+    font-weight: 900;
+    margin-bottom: 9px;
+    line-height: 17.86px;
 }
 
 .feature_description {
@@ -223,7 +224,8 @@ header .header_text_logo span {
     width: 220px;
     font-size: 12px;
     font-weight: 400;
-    line-height: 21.56px;
+    line-height: 21.6px;
     vertical-align: top;
+    text-align: justify;
     
 }
