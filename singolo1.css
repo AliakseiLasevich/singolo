@@ -261,9 +261,10 @@ header .header_text_logo span {
     color: #666d89;
     font-family: Lato, serif;
     font-size: 30px;
-    font-weight: 400;
-    line-height: 17.86px;
-    margin: 67px 0 33px 41px;
+    font-weight: 900;
+    line-height: 18px;
+    margin: 69px 0 22px 41px;
+    height: 23px;
 }
 
 .portfolio_description {
@@ -272,24 +273,29 @@ header .header_text_logo span {
     font-size: 18px;
     font-weight: 300;
     line-height: 30px;
-    margin: 0 0 15px 41px;
+    margin: 0 0 24px 41px;
+    height: 17px;
 }
 
 .portfolio_menu {
     margin: 0 0 19px 41px;
+    width: 289px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .portfolio_menu_item {
     display: inline-block;
     border: 1px #767e9e solid;
-    border-radius: 7px;
-    padding: 4px;
-    margin-right: 10px;
+    border-radius: 5px;
+    padding-left: 6px;
+    padding-right: 6px;
     color: #767e9e;
     font-family: Lato;
     font-size: 12px;
     font-weight: 400;
-    line-height: 21.56px;
+    line-height: 20px;
+    text-align: center;
 }
 
 .portfolio_images_wrapper {
@@ -301,7 +307,7 @@ header .header_text_logo span {
     margin: 0 auto;
     width: 940px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     height: 209px;
     flex-wrap: wrap;
 
@@ -335,16 +341,16 @@ header .header_text_logo span {
     height: 6px;
     background-color: white;
     position: absolute;
-    bottom: 0px;
+    bottom: 0;
 }
 
 .about_us_title {
     color: #666d89;
     font-family: Lato;
     font-size: 30px;
-    font-weight: 400;
+    font-weight: 900;
     line-height: 18px;
-    margin: 66px 0 33px 40px;
+    margin: 68px 0 29px 40px;
 }
 
 .about_us_description {
@@ -353,14 +359,14 @@ header .header_text_logo span {
     font-size: 18px;
     font-weight: 300;
     line-height: 30px;
-    margin: 0 40px 49px 41px;
+    margin: 0 40px 43px 41px;
 }
 
 .authors_wrapper {
     margin: 0 auto;
     width: 940px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 
@@ -369,13 +375,17 @@ header .header_text_logo span {
     height: 443px;
 }
 
+.author_photo {
+margin-bottom: 13px;
+}
+
 .author_name {
     color: #666d89;
     font-family: Lato;
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 900;
     line-height: 18px;
-    margin: 19px 0 18px 1px;
+    margin: 0 0 10px 1px;
 }
 
 .author_description {
@@ -384,22 +394,23 @@ header .header_text_logo span {
     font-size: 12px;
     font-weight: 400;
     line-height: 22px;
-    margin-bottom: 18px;
+    margin-bottom: 22px;
 }
 
 .author_socials {
+    margin-left: 1px;
     width: 152px;
-    height: 32px;
     display: flex;
     justify-content: space-between;
 
 }
 
-.social {
+.social_icon_wrapper {
+    width: 32px;
+    height: 32px;
     border: 1px solid #666d89;
     border-radius: 50%;
-    max-height: 14px;
-
-    display: inline-block;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
