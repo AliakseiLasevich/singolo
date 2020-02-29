@@ -7,7 +7,7 @@
 
 @font-face {
     font-family: 'Lato';
-    src: url(assets/Lato-Light.ttf.ttf);
+    src: url(assets/Lato-Light.ttf);
     font-weight: 300;
 }
 
@@ -28,6 +28,7 @@
     src: url(assets/Lato-Black.ttf);
     font-weight: 900;
 }
+
 .wrapper {
     width: 1020px;
     margin: 0 auto;
@@ -64,7 +65,7 @@ header {
     font-weight: 700;
     text-transform: uppercase;
     text-decoration: none;
-    }
+}
 
 header .header_text_logo span {
     color: #f06c64;
@@ -79,9 +80,9 @@ header .header_text_logo span {
 }
 
 .menu_wrapper {
-  display: flex;
-  justify-content: space-between;
-  }
+    display: flex;
+    justify-content: space-between;
+}
 
 .menu_item {
     display: inline-block;
@@ -138,12 +139,12 @@ header .header_text_logo span {
     height: 6px;
     width: 1020px;
     margin: 0;
-    position:absolute;
-    bottom:0;
+    position: absolute;
+    bottom: 0;
     z-index: 50;
 }
 
-    /* ========SERVICES======== */
+/* ========SERVICES======== */
 .services {
     width: 1020px;
     height: 500px;
@@ -156,7 +157,7 @@ header .header_text_logo span {
     padding: 69px 40px 68px 40px;
 }
 
-.services_info{
+.services_info {
     margin: 0;
     margin-bottom: 12px;
 }
@@ -165,7 +166,7 @@ header .header_text_logo span {
     color: #666d89;
     font-family: Lato;
     font-size: 30px;
-    font-weight: 900;    
+    font-weight: 900;
 }
 
 .services_info_title {
@@ -178,7 +179,7 @@ header .header_text_logo span {
     font-weight: 400;
     margin-bottom: 27px;
     letter-spacing: -0.1px;
-    }
+}
 
 .services_info_description {
     color: #767e9e;
@@ -192,10 +193,10 @@ header .header_text_logo span {
 }
 
 
-    /* ========FEATURES FLEXBOX======== */
+/* ========FEATURES FLEXBOX======== */
 .feature_container {
     display: flex;
-    justify-content: space-around;
+    /*justify-content: space-around;*/
     justify-content: space-between;
     height: 209px;
     width: 939px;
@@ -206,7 +207,7 @@ header .header_text_logo span {
     width: 32%;
     height: 86px;
     margin-bottom: 37px;
-    }
+}
 
 .feature_image {
     display: inline-block;
@@ -217,7 +218,8 @@ header .header_text_logo span {
     margin-left: 1px;
     margin-top: 1px;
 }
-.feature h2{
+
+.feature h2 {
     font-family: Lato;
     font-weight: 900;
     margin-bottom: 9px;
@@ -245,5 +247,159 @@ header .header_text_logo span {
     margin: 0;
     bottom: 0px;
     background-color: #ffffff;
+}
+
+.portfolio {
+    width: 1020px;
+    height: 870px;
+    background-color: #2d303a;
+    position: relative;
+}
+
+.portfolio_title {
+    display: inline-block;
+    color: #666d89;
+    font-family: Lato, serif;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 17.86px;
+    margin: 67px 0 33px 41px;
+}
+
+.portfolio_description {
+    color: #767e9e;
+    font-family: Lato, serif;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 30px;
+    margin: 0 0 15px 41px;
+}
+
+.portfolio_menu {
+    margin: 0 0 19px 41px;
+}
+
+.portfolio_menu_item {
+    display: inline-block;
+    border: 1px #767e9e solid;
+    border-radius: 7px;
+    padding: 4px;
+    margin-right: 10px;
+    color: #767e9e;
+    font-family: Lato;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 21.56px;
+}
+
+.portfolio_images_wrapper {
+    width: 1020px;
+
+}
+
+.portfolio_images {
+    margin: 0 auto;
+    width: 940px;
+    display: flex;
+    justify-content: space-around;
+    height: 209px;
+    flex-wrap: wrap;
+
+}
+
+.portfolio_image {
+    margin-bottom: 20px;
+    width: 220px;
+    height: 187px;
+}
+
+.portfolio_bottom {
+    width: 1020px;
+    height: 6px;
+    background-color: #323746;
+    position: absolute;
+    bottom: 0px;
+}
+
+.about_us {
+    width: 1020px;
+    height: 734px;
+    margin: 0 auto;
+    background-color: #f2f2f2;
+    position: relative;
+    display: inline-block;
+}
+
+.about_us_bottom {
+    width: 1020px;
+    height: 6px;
+    background-color: white;
+    position: absolute;
+    bottom: 0px;
+}
+
+.about_us_title {
+    color: #666d89;
+    font-family: Lato;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 18px;
+    margin: 66px 0 33px 40px;
+}
+
+.about_us_description {
+    color: #767e9e;
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 30px;
+    margin: 0 40px 49px 41px;
+}
+
+.authors_wrapper {
+    margin: 0 auto;
+    width: 940px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.author {
+    width: 301px;
+    height: 443px;
+}
+
+.author_name {
+    color: #666d89;
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 18px;
+    margin: 19px 0 18px 1px;
+}
+
+.author_description {
+    color: #767e9e;
+    font-family: Lato;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 22px;
+    margin-bottom: 18px;
+}
+
+.author_socials {
+    width: 152px;
+    height: 32px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.social {
+    border: 1px solid #666d89;
+    border-radius: 50%;
+    max-height: 14px;
+
+    display: inline-block;
 
 }
