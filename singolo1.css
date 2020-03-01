@@ -93,6 +93,7 @@ header .header_text_logo span {
     letter-spacing: 0.25px;
     text-decoration: none;
 }
+
 .menu_item:hover {
     color: #eb5055;
 }
@@ -100,6 +101,14 @@ header .header_text_logo span {
 .menu_divider {
     display: inline-block;
     color: #494e62;
+    cursor: default;
+    /*NO SELECT:*/
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none;    /* Non-prefixed version, currently supported by Chrome, Opera and Firefox */
 }
 
 /* ========SLIDER======== */
@@ -119,6 +128,7 @@ header .header_text_logo span {
 .arrow_left:hover {
     filter: invert(1);
 }
+
 .iphone_vertical {
     margin: 53px 0 0 50px;
     vertical-align: top;
@@ -134,6 +144,7 @@ header .header_text_logo span {
     vertical-align: top;
     cursor: pointer;
 }
+
 .arrow_right:hover {
     filter: invert(1);
 }
