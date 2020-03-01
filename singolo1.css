@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: Lato, serif;
 
 }
 
@@ -51,7 +52,7 @@ header {
     background-color: #323746;
     height: 6px;
     position: absolute;
-    bottom: 0px;
+    bottom: 0;
     width: 1020px;
 }
 
@@ -60,7 +61,6 @@ header {
     margin-left: 40px;
     margin-right: 450px;
     color: #ffffff;
-    font-family: Lato, serif;
     font-size: 25px;
     font-weight: 700;
     text-transform: uppercase;
@@ -87,15 +87,13 @@ header .header_text_logo span {
 .menu_item {
     display: inline-block;
     color: #ffffff;
-    font-family: Lato, serif;
     font-size: 11px;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.25px;
     text-decoration: none;
 }
-
-.menu_wrapper :hover {
+.menu_item:hover {
     color: #eb5055;
 }
 
@@ -118,6 +116,9 @@ header .header_text_logo span {
     cursor: pointer;
 }
 
+.arrow_left:hover {
+    filter: invert(1);
+}
 .iphone_vertical {
     margin: 53px 0 0 50px;
     vertical-align: top;
@@ -132,6 +133,9 @@ header .header_text_logo span {
     margin: 281px 0 0 51px;
     vertical-align: top;
     cursor: pointer;
+}
+.arrow_right:hover {
+    filter: invert(1);
 }
 
 .slider_bottom {
@@ -158,32 +162,26 @@ header .header_text_logo span {
 }
 
 .services_info {
-    margin: 0;
-    margin-bottom: 12px;
+    margin: 0 0 12px;
 }
 
 .services .services_wrapper .services_info .services_info_title h2 {
     color: #666d89;
-    font-family: Lato;
     font-size: 30px;
     font-weight: 900;
 }
 
 .services_info_title {
     color: #666d89;
-    font-family: Lato, sans-serif;
     font-size: 30px;
     font-weight: 400;
     line-height: 17.86px;
-    font-size: 30px;
-    font-weight: 400;
     margin-bottom: 27px;
     letter-spacing: -0.1px;
 }
 
 .services_info_description {
     color: #767e9e;
-    font-family: Lato;
     font-size: 18px;
     font-weight: 300;
     line-height: 30px;
@@ -192,11 +190,9 @@ header .header_text_logo span {
     text-align: justify;
 }
 
-
 /* ========FEATURES FLEXBOX======== */
 .feature_container {
     display: flex;
-    /*justify-content: space-around;*/
     justify-content: space-between;
     height: 209px;
     width: 939px;
@@ -213,14 +209,10 @@ header .header_text_logo span {
     display: inline-block;
     height: 59px;
     width: 59px;
-    margin: 0 0;
-    margin-right: 16px;
-    margin-left: 1px;
-    margin-top: 1px;
+    margin: 1px 16px 0 1px;
 }
 
 .feature h2 {
-    font-family: Lato;
     font-weight: 900;
     margin-bottom: 9px;
     line-height: 17.86px;
@@ -229,7 +221,6 @@ header .header_text_logo span {
 .feature_description {
     display: inline-block;
     color: #767e9e;
-    font-family: Lato;
     width: 220px;
     height: 86px;
     font-size: 12px;
@@ -245,7 +236,7 @@ header .header_text_logo span {
     height: 6px;
     width: 1020px;
     margin: 0;
-    bottom: 0px;
+    bottom: 0;
     background-color: #ffffff;
 }
 
@@ -259,7 +250,6 @@ header .header_text_logo span {
 .portfolio_title {
     display: inline-block;
     color: #666d89;
-    font-family: Lato, serif;
     font-size: 30px;
     font-weight: 900;
     line-height: 18px;
@@ -269,7 +259,6 @@ header .header_text_logo span {
 
 .portfolio_description {
     color: #767e9e;
-    font-family: Lato, serif;
     font-size: 18px;
     font-weight: 300;
     line-height: 30px;
@@ -291,15 +280,16 @@ header .header_text_logo span {
     padding-left: 6px;
     padding-right: 6px;
     color: #767e9e;
-    font-family: Lato;
     font-size: 12px;
     font-weight: 400;
     line-height: 20px;
     text-align: center;
+    cursor: pointer;
 }
 
-.portfolio_images_wrapper {
-    width: 1020px;
+.portfolio_menu_item:hover {
+    color: #dedede;
+    border-color: #dedede;
 
 }
 
@@ -308,8 +298,9 @@ header .header_text_logo span {
     width: 940px;
     display: flex;
     justify-content: space-between;
-    height: 209px;
+    height: 601px;
     flex-wrap: wrap;
+    overflow: hidden;
 
 }
 
@@ -324,7 +315,7 @@ header .header_text_logo span {
     height: 6px;
     background-color: #323746;
     position: absolute;
-    bottom: 0px;
+    bottom: 0;
 }
 
 .about_us {
@@ -346,20 +337,18 @@ header .header_text_logo span {
 
 .about_us_title {
     color: #666d89;
-    font-family: Lato;
     font-size: 30px;
     font-weight: 900;
     line-height: 18px;
-    margin: 68px 0 29px 40px;
+    margin: 68px 0 27px 40px;
 }
 
 .about_us_description {
     color: #767e9e;
-    font-family: Lato;
     font-size: 18px;
     font-weight: 300;
     line-height: 30px;
-    margin: 0 40px 43px 41px;
+    margin: 0 40px 45px 41px;
 }
 
 .authors_wrapper {
@@ -376,21 +365,19 @@ header .header_text_logo span {
 }
 
 .author_photo {
-margin-bottom: 13px;
+    margin-bottom: 13px;
 }
 
 .author_name {
     color: #666d89;
-    font-family: Lato;
     font-size: 18px;
     font-weight: 900;
     line-height: 18px;
-    margin: 0 0 10px 1px;
+    margin: 0 0 10px 0;
 }
 
 .author_description {
     color: #767e9e;
-    font-family: Lato;
     font-size: 12px;
     font-weight: 400;
     line-height: 22px;
@@ -413,4 +400,9 @@ margin-bottom: 13px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.social_icon_wrapper:hover {
+    filter: invert(1);
+    cursor: pointer;
 }
